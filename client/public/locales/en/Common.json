@@ -1,13 +1,13 @@
 ﻿{
-  "ApplicationName": "MyTelecom",
+  "ApplicationName": "MARIO DEV END",
 
-  "GitHubLinkText": "GitHub Source",
-  "GitHubLink": "https://github.com/docusign/sample-app-mytelecom-nodejs",
+  "GitHubLinkText": "MORE EXAMPLES",
+  "GitHubLink": "https://developers.docusign.com/sample-apps/",
   "AboutLinkText": "About",
   "LogInText": "Log in",
   "LogOutText": "Log out",
 
-  "Copyright": "© 2023 DocuSign Inc.",
+  "Copyright": "© 2024 MARIO DIMAC",
 
   "RequiredFieldError": "This field is required.",
   "InputTooLongError": "Your input is too long.",
