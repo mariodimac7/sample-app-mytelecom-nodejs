@@ -1,5 +1,5 @@
 ﻿{
-  "ApplicationName": "MARIO DEV END",
+  "ApplicationName": "MARIO DEV APP",
 
   "GitHubLinkText": "MORE EXAMPLES",
   "GitHubLink": "https://developers.docusign.com/sample-apps/",
@@ -7,7 +7,7 @@
   "LogInText": "Log in",
   "LogOutText": "Log out",
 
-  "Copyright": "© 2024 MARIO DIMAC",
+  "Copyright": "© 2024 CREATED WITH ❤️ by MARIO DIMAC",
 
   "RequiredFieldError": "This field is required.",
   "InputTooLongError": "Your input is too long.",
