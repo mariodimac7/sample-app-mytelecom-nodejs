@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from '../../components';
 import { useTranslation } from 'react-i18next';
 import Hero from './hero';
+import Slider from './slider';
 import PreFooter from './preFooter';
 import img1 from '../../assets/img/img-assumption.svg';
 import img2 from '../../assets/img/img-purchase.svg';
@@ -50,6 +51,11 @@ const Home = () => {
               featureList={t('Card3.FeaturesList')}
             />
           </Row>
+        </div>
+      </div>
+      <div className="slider-homepage">
+        <div className="justify-content-center text-center d-flex">
+          <Slider />
         </div>
       </div>
       <div className="container-fluid">
