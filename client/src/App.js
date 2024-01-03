@@ -9,6 +9,7 @@ import ServiceChange from './pages/serviceChange';
 import Footer from './components/footer';
 import './assets/scss/main.scss';
 import Success from './pages/success';
+import PowerForm from './pages/powerform';
 
 function App() {
   const [nextPage, setNextPage] = useState('');
@@ -23,6 +24,7 @@ function App() {
           <Route path="/purchaseDevice" element={<PurchaseDevice />} />
           <Route path="/serviceChange" element={<ServiceChange />} />
           <Route path="/submitted" element={<Success />} />
+          <Route path="/powerForm" element={<PowerForm />} />
         </Routes>
 
         <Footer />

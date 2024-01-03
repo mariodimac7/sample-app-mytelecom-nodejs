@@ -8,7 +8,7 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: false,
-    ns: ['Common', 'Home', 'AssumptionOfLiability', 'PurchaseDevice', 'ChangeService', 'Success'],
+    ns: ['Common', 'Home', 'AssumptionOfLiability', 'PurchaseDevice', 'ChangeService', 'Success', 'PowerForm'],
     transKeepBasicHtmlNodesFor: ['h3', 'h4', 'strong', 'i', 'p'],
     keySeparator: '.',
     interpolation: {

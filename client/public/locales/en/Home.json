@@ -3,17 +3,17 @@
     "P1": "Grow your business with DocuSign ",
     "P2": ""
   },
-  "Header2": "Discover the power of DocuSign APIs and how they can be used in the different industries. Presented by DocuSign ProServ team.",
+  "Header2": "Discover the power of DocuSign APIs and how they can be used in the different industries. Presented by DocuSign ProServ team.👨🏻‍💻",
 
   "Card1": {
-    "Title": "Assumption of Liability",
+    "Title": "Account Change",
     "Description": "Change the ownership of your account.",
     "Button": "Get Started",
     "FeaturesTitle": "DocuSign features:",
     "FeaturesList": "<li>Embedded signing</li><li>SMS delivery</li><li>Data entry tabs</li><li>Anchor positioning</li>"
   },
   "Card2": {
-    "Title": "Purchase New Device",
+    "Title": "Get a New Device",
     "Description": "Buy a new mobile phone.",
     "Button": "Get Started",
     "FeaturesTitle": "DocuSign features:",
@@ -26,11 +26,32 @@
     "FeaturesTitle": "DocuSign features:",
     "FeaturesList": "<li>Remote signing</li><li>Bulk sending</li><li>Data entry tabs</li><li>Anchor positioning</li>"
   },
+  "Card4": {
+    "Title": "Register for an Event",
+    "Description": "Power Form example for event registration.",
+    "Button": "Get Started",
+    "FeaturesTitle": "DocuSign features:",
+    "FeaturesList": "<li>PowerForms</li><li>Templates</li><li>Data entry tabs</li>"
+  },
+  "Card5": {
+    "Title": "Web Forms 🆕",
+    "Description": "New option for self-service forms.",
+    "Button": "Get Started",
+    "FeaturesTitle": "DocuSign features:",
+    "FeaturesList": "<li>WebForms</li><li>Templates</li><li>Data entry tabs</li><li>Agreement Actions</li>"
+  },
+  "Card6": {
+    "Title": "Send an envelope via WhattsApp 🔥",
+    "Description": "Check out the new delivery option to reach out more clients.",
+    "Button": "Get Started",
+    "FeaturesTitle": "DocuSign features:",
+    "FeaturesList": "<li>Remote Signing</li><li>Templates</li><li>WhatsApp Delivery</li><li>Conditional Routing</li>"
+  },
 
-  "PreFooter1": "DocuSign: It's time to agree better",
-  "PreFooter2": "DocuSign helps organizations connect and automate how they prepare, sign, act on, and manage agreements.",
-  "CreateDeveloperAccountHeader": "Create Developer Account",
-  "CreateDeveloperAccountHeaderLink": "https://go.docusign.com/o/sandbox/",
-  "LearnMore": "Learn More",
-  "LearnMoreLink": "https://developers.docusign.com/"
+  "PreFooter1": "DocuSign Connect (webhooks)",
+  "PreFooter2": "Webhook service that enables you to receive updates when specific triggering events occur in your eSignature workflows.",
+  "CreateDeveloperAccountHeader": "See in action",
+  "CreateDeveloperAccountHeaderLink": "",
+  "LearnMore": "Polling",
+  "LearnMoreLink": ""
 }

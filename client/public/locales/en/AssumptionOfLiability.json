@@ -1,5 +1,5 @@
 {
-  "Title": "Assumption of Liability",
+  "Title": "Account Change",
   "CurrentAccountOwner": "Current account owner",
   "NewAccountOwner": "New account owner",
   "Name": "Name:",
@@ -7,7 +7,7 @@
   "CountryCode": "Country code:",
   "PhoneNumber": "Phone number:",
   "ButtonName": "Submit",
-  "PhonePlaceholder": "555-555-5555",
+  "PhonePlaceholder": "+353 123 4567",
   "InvalidEmailFormatError": "Invalid email format.",
   "InvalidCountryCodeError": "Invalid country code.",
   "InvalidPhoneNumberError": "Invalid phone number.",

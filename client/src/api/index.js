@@ -9,6 +9,16 @@ export const assumptionLiability = async (body) => {
   return api.post('/assumptionLiability', body);
 };
 
+export const powerForm = async (form) => {
+  await login();
+
+  const body = {
+    signerName: `${form.firstName} ${form.lastName}`,
+    ...form,
+  };
+  return api.post('/powerForm', body);
+};
+
 export const purchaseDevice = async (form) => {
   await login();
 
