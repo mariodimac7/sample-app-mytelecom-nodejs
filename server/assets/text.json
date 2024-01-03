@@ -16,7 +16,7 @@
         "serviceChangeEnvelopeError": "Error sending envelope in serviceChangeController."
     },
     "purchaseDeviceController": {
-        "emailSubject": "myTelecom: Purchase a New Device",
+        "emailSubject": "Purchase a New Device",
         "phoneA": "Phone A",
         "phoneB": "Phone B",
         "phoneC": "Phone C",
@@ -26,7 +26,7 @@
         "emailSubject": "Multi-Line Service Change Request for Business Accounts"
     },
     "assumptionLiabilityController": {
-        "emailSubject": "MyTelecom: Assume liability"
+        "emailSubject": "Assume liability"
     },
     "jwt": {
         "consentError": "Consent required",

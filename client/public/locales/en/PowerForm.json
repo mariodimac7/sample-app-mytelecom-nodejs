@@ -7,10 +7,6 @@
     "Email": "Email:",
   
     "PhoneInfo": "Phone info",
-    "phoneA": "Phone A ($799)",
-    "phoneB": "Phone B ($999)",
-    "phoneC": "Phone C ($1099)",
-    "phoneD": "Phone D ($1199)",
     "SelectPhone": "Select a phone:",
     "InsuranceLabel": "Would you like to include device insurance at $5/month for 2 years?",
     "DownPayment": "Enter the down payment in USD:",
