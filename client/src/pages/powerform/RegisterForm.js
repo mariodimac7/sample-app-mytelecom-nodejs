@@ -12,7 +12,7 @@ function RegisterForm({ onSubmit }) {
     formState: { errors },
   } = useForm();
 
-  const { t } = useTranslation('PurchaseDevice');
+  const { t } = useTranslation('PowerForm');
   const { emailRegExp, formCheckFieldRequired, formCheckNameMaxLength } = useValidation();
 
   const [eventSelection, setEventSelection] = useState(0);
@@ -20,6 +20,8 @@ function RegisterForm({ onSubmit }) {
   const handleEventChange = (evt) => {
     setEventSelection(evt.target.selectedIndex);
   };
+  const [fullname, setFullName] = useState('');
+  const [email, setEmail] = useState('');
 
   return (
     <>
@@ -28,6 +30,8 @@ function RegisterForm({ onSubmit }) {
         <Form.Group className="mb-4">
           <Input
             id="firstName"
+            name={fullname}
+            onChange={(e) => setFullName(e.target.value)}
             label={t('FirstName')}
             autoComplete="given-name"
             {...register('firstName', {
@@ -49,6 +53,8 @@ function RegisterForm({ onSubmit }) {
           />
           <Input
             id="signerEmail"
+            name={email}
+            onChange={(e) => setEmail(e.target.value)}
             label={t('Email')}
             autoComplete="email"
             {...register('signerEmail', {

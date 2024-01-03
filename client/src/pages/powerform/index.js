@@ -10,17 +10,13 @@ function PowerForm() {
   const { t } = useTranslation('PowerForm');
 
   const navigate = useNavigate();
-
-  const handleSubmit = async (form) => {
-    try {
-      const response = await powerForm(form);
-      console.log(`Received response: ${response.data}`);
-      navigate('/submitted');
-    } catch (error) {
-      console.log('handleSubmit error');
-      console.log(error);
-    }
-  };
+  function handleClick() {
+    window.open(
+      `https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=5a414741-0f24-455c-a53b-2d7aa93f0a51&env=demo&acct=d06d56f3-b556-4076-9d26-49395c6bbd96&v=2
+      &Client_UserName=Mario&Client_Email=mario@dimac.hr`
+    );
+    console.log();
+  }
 
   return (
     <section className="content-section">
@@ -29,7 +25,7 @@ function PowerForm() {
           <Col className="form-col">
             <div className="form-holder">
               <h2 className="form-title">{t('Title')}</h2>
-              <RegisterForm onSubmit={handleSubmit} />
+              <RegisterForm onSubmit={handleClick} />
             </div>
           </Col>
           <SeeMore title={t('SeeMore.Title')} text={t('SeeMore.Text')} />
