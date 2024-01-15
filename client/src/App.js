@@ -10,6 +10,7 @@ import Footer from './components/footer';
 import './assets/scss/main.scss';
 import Success from './pages/success';
 import PowerForm from './pages/powerform';
+import Webform from './pages/webform';
 
 function App() {
   const [nextPage, setNextPage] = useState('');
@@ -25,6 +26,7 @@ function App() {
           <Route path="/serviceChange" element={<ServiceChange />} />
           <Route path="/submitted" element={<Success />} />
           <Route path="/powerForm" element={<PowerForm />} />
+          <Route path="/webform" element={<Webform />} />
         </Routes>
 
         <Footer />

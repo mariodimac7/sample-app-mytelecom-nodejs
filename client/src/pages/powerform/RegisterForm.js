@@ -22,14 +22,14 @@ function RegisterForm({ onSubmit }) {
   };
   const [fullname, setFullName] = useState('');
   const [email, setEmail] = useState('');
-
+  console.log('child: ' + fullname);
   return (
     <>
       <Form onSubmit={handleSubmit((form) => onSubmit({ ...form, eventSelection }))}>
         <h4>{t('Please provide your details')}</h4>
         <Form.Group className="mb-4">
           <Input
-            id="firstName"
+            id="fullname"
             name={fullname}
             onChange={(e) => setFullName(e.target.value)}
             label={t('FirstName')}
@@ -52,7 +52,7 @@ function RegisterForm({ onSubmit }) {
             errors={errors}
           />
           <Input
-            id="signerEmail"
+            id="email"
             name={email}
             onChange={(e) => setEmail(e.target.value)}
             label={t('Email')}

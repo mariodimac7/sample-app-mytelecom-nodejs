@@ -10,7 +10,6 @@ function PurchaseDevice() {
   const { t } = useTranslation('PurchaseDevice');
 
   const navigate = useNavigate();
-
   const handleSubmit = async (form) => {
     try {
       const response = await purchaseDevice(form);
@@ -21,7 +20,6 @@ function PurchaseDevice() {
       console.log(error);
     }
   };
-
   return (
     <section className="content-section">
       <Container>
