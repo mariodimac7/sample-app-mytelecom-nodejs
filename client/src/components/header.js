@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/logo-ds.png';
 import source from '../assets/img/github-source.svg';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -19,7 +19,9 @@ export const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="https://silver-waffle-4gq5v6qx4wgf7j75-3000.app.github.dev/">DocuSign Demo Sample App</Navbar.Brand>
+        <Navbar.Brand href="https://silver-waffle-4gq5v6qx4wgf7j75-3000.app.github.dev/">
+          <img src={logo} alt="Logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

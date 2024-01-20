@@ -4,7 +4,7 @@ import { Input, useValidation, FormButtons, NumberInput, SelectInput, RadioInput
 import { Form } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-function RegisterForm({ onSubmit }) {
+function RegisterForm() {
   // Grab register and handleSubmit from useForm hook
   const {
     register,
@@ -15,32 +15,41 @@ function RegisterForm({ onSubmit }) {
   const { t } = useTranslation('PowerForm');
   const { emailRegExp, formCheckFieldRequired, formCheckNameMaxLength } = useValidation();
 
-  const [eventSelection, setEventSelection] = useState(0);
-
   const handleEventChange = (evt) => {
     setEventSelection(evt.target.selectedIndex);
   };
-  const [fullname, setFullName] = useState('');
-  const [email, setEmail] = useState('');
 
-  function handleClick() {
+  //add variables
+  const [formData, setFormData] = useState({ fullname: '', email: '', message: '' });
+
+  //handle change function
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  //open powerform link on the submission
+  const handleSub = (event) => {
+    event.preventDefault();
     window.open(
       `https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=5a414741-0f24-455c-a53b-2d7aa93f0a51&env=demo&acct=d06d56f3-b556-4076-9d26-49395c6bbd96&v=2
-      &Client_UserName=${fullname}&Client_Email=${email}`
+      &Client_UserName=${formData.fullname}&Client_Email=${formData.email}`
     );
-  }
+  };
   return (
     <>
-      <Form onSubmit={handleClick}>
+      <Form onSubmit={handleSub}>
         <h4>{t('Please provide your details')}</h4>
         <Form.Group className="mb-4">
           <Input
+            type="text"
             id="fullname"
-            name={fullname}
-            onChange={(e) => setFullName(e.target.value)}
-            label={t('FirstName')}
-            autoComplete="given-name"
-            {...register('firstName', {
+            name="fullname"
+            onChange={handleChange}
+            label={t('Full Name')}
+            defaultValue={formData.fullname}
+            autoComplete="full-name"
+            {...register('fullname', {
               required: formCheckFieldRequired,
               maxLength: formCheckNameMaxLength,
             })}
@@ -48,20 +57,12 @@ function RegisterForm({ onSubmit }) {
           />
 
           <Input
-            id="lastName"
-            label={t('LastName')}
-            autoComplete="family-name"
-            {...register('lastName', {
-              required: formCheckFieldRequired,
-              maxLength: formCheckNameMaxLength,
-            })}
-            errors={errors}
-          />
-          <Input
+            type="email"
             id="email"
-            name={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="email"
+            onChange={handleChange}
             label={t('Email')}
+            defaultValue={formData.email}
             autoComplete="email"
             {...register('signerEmail', {
               required: formCheckFieldRequired,
