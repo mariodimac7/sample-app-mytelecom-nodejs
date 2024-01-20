@@ -47,15 +47,15 @@ If you get the current version or a message about a patch, you have Node.js inst
 2. Open up a command-line window and navigate to the client window with `cd client` and run `npm install`
 3. Then, navigate into the server directory with `cd ../server` and run `npm install`
 
-## Running MyTelecom locally
+## Running locally
 ### Manual
-1. Navigate to project folder: **`cd sample-app-mytelecom-nodejs`**
+1. Navigate to project folder: **`cd sample-app-nodejs`**
 2. Navigate to the client folder with **`cd client`** and run **`npm run start`**
 3. Navigate to the server directory with **`cd ../server`** and run **`npm run start`**
 4. Open a browser to http://localhost:3000 
 
 ### Using scripts
-1. Navigate to the application folder: **`cd sample-app-mytelecom-nodejs`**
+1. Navigate to the application folder: **`cd sample-app-nodejs`**
 2. Navigate to the server folder: **`cd server`**
 3. Run **``npm run dev``**
 4. Open a browser to http://localhost:3000 
