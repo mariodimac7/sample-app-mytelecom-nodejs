@@ -22,10 +22,16 @@ function RegisterForm({ onSubmit }) {
   };
   const [fullname, setFullName] = useState('');
   const [email, setEmail] = useState('');
-  console.log('child: ' + fullname);
+
+  function handleClick() {
+    window.open(
+      `https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=5a414741-0f24-455c-a53b-2d7aa93f0a51&env=demo&acct=d06d56f3-b556-4076-9d26-49395c6bbd96&v=2
+      &Client_UserName=${fullname}&Client_Email=${email}`
+    );
+  }
   return (
     <>
-      <Form onSubmit={handleSubmit((form) => onSubmit({ ...form, eventSelection }))}>
+      <Form onSubmit={handleClick}>
         <h4>{t('Please provide your details')}</h4>
         <Form.Group className="mb-4">
           <Input
