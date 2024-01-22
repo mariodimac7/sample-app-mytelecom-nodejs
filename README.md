@@ -1,28 +1,5 @@
-# Node.js and React: MyTelecom Sample App
-# Mario Test App NEW
-
-
-MyTelecom showcases how the telecommunications industry could integrate with DocuSign technologies using Node.js and React. All scenarios are for **demonstration purposes only**, meaning none of what you sign is binding in any way and envelopes in their entirety are deleted after 30 days. The following are the 3 different scenarios you can test out yourself:
-1. **Assumption of Liability.**  
-   This will describe the process of changing ownership of the account. User is asked who they would like to change ownership of the account to. User is asked if they agree to transfer the ownership by signing the document using Embedded Signing. The envelope is sent through SMS to the receiver taking ownership of the account.  
-   * SMS delivery
-   * Anchor positioning
-   * Data entry tabs
-   * Embedded signing
-
-2. **Purchase New Device.**  
-   The user can purchase a new device from the telecom provider through remote signing. The user should be taken to a form where they input their name, email, and choose device and payment options. After submitting the form they should receive two envelopes with device and payment information.
-   * Remote Signing
-   * Scheduled Sending
-   * Anchor positioning
-   * Payments
-   
-3. **Multi-Line Service Change Request for Business Accounts.**  
-   This will describe the process of creating the service change request for multiple recipients. The user should be taken to a form where they choose the type of service change, set the number of customers receiving the changes, and information regarding each recipient.
-   * Remote Signing
-   * Data entry tabs
-   * Anchor positioning
-   * Bulk Sending
+# Node.js and React: Sample App
+# Mario Test App
 
 ## Installation
 ### Prerequisites
@@ -48,12 +25,6 @@ Before you can run this app on your local machine, you first must create a new i
    * http://localhost:3000
    * http://localhost:3000/index
 
-### Configure a Payment Gateway
-If you are planning on running the Purchase New Device scenario, you will need to configure a payment gateway for your developer account. For our example, we will use the Stripe gateway service.
-
-1. On the [**Payments**](https://admindemo.docusign.com/authenticate?goTo=payments) page in your developer account, select ADD PAYMENT GATEWAY > Stripe.
-2. For development, you can skip the Stripe account application by using the Skip this form link at the top of the page. An enabled Stripe payment gateway is now associated with your DocuSign developer account and is shown under **Payment Gateway**.
-3. Save the **Gateway Account ID** GUID to your .env file and update the other relevant settings under **Payment configuration**.
 
 ### Environment variables
 * **USER_ID** - A GUID unique to each user's DocuSign Account, located on the Apps and Keys page.
@@ -76,15 +47,15 @@ If you get the current version or a message about a patch, you have Node.js inst
 2. Open up a command-line window and navigate to the client window with `cd client` and run `npm install`
 3. Then, navigate into the server directory with `cd ../server` and run `npm install`
 
-## Running MyTelecom locally
+## Running locally
 ### Manual
-1. Navigate to project folder: **`cd sample-app-mytelecom-nodejs`**
+1. Navigate to project folder: **`cd sample-app-nodejs`**
 2. Navigate to the client folder with **`cd client`** and run **`npm run start`**
 3. Navigate to the server directory with **`cd ../server`** and run **`npm run start`**
 4. Open a browser to http://localhost:3000 
 
 ### Using scripts
-1. Navigate to the application folder: **`cd sample-app-mytelecom-nodejs`**
+1. Navigate to the application folder: **`cd sample-app-nodejs`**
 2. Navigate to the server folder: **`cd server`**
 3. Run **``npm run dev``**
 4. Open a browser to http://localhost:3000 
