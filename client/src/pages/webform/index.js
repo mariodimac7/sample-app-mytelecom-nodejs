@@ -1,34 +1,34 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { SeeMore } from '../../components';
+import { useTranslation } from 'react-i18next';
+import { useForm } from 'react-hook-form';
+import { Input, useValidation, FormButtons, NumberInput, SelectInput, RadioInput } from '../../components';
+import { Form } from 'react-bootstrap';
+import WebformForm from './webformform';
 
-//This component will use a Webform - check all the components and missing parts
-export default function WebForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+function PowerForm() {
+  const {
+    formState: { errors },
+  } = useForm();
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    window.open(
-      `https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=5a414741-0f24-455c-a53b-2d7aa93f0a51&env=demo&acct=d06d56f3-b556-4076-9d26-49395c6bbd96&v=2
-      &Client_UserName=${formData.name}&Client_Email=${formData.email}`
-    );
-  };
+  const { t } = useTranslation('WebForm');
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
-
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
-
-      <label htmlFor="message">Message:</label>
-      <textarea id="message" name="message" value={formData.message} onChange={handleChange} />
-
-      <button type="submit">Submit</button>
-    </form>
+    <section className="content-section">
+      <Container>
+        <Row className="justify-content-center">
+          <Col className="form-col">
+            <div className="form-holder">
+              <h2 className="form-title">{t('Title')}</h2>
+              <WebformForm />
+            </div>
+          </Col>
+          <SeeMore title={t('SeeMore.Title')} text={t('SeeMore.Text')} />
+        </Row>
+      </Container>
+    </section>
   );
 }
+
+export default PowerForm;

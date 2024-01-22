@@ -80,7 +80,7 @@ const Home = () => {
               img={img5}
               title={t('Card5.Title')}
               description={t('Card5.Description')}
-              linkTo="/purchaseDevice"
+              linkTo="/webform"
               getStarted={t('Card5.Button')}
               featureTitle={t('Card5.FeaturesTitle')}
               featureList={t('Card5.FeaturesList')}

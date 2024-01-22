@@ -20,7 +20,7 @@ const app = express()
   .use(cookieParser())
   .use(
     cookieSession({
-      name: 'MyTelecomApp',
+      name: 'MyApp',
       maxAge: maxSessionAge,
       secret: process.env.SESSION_SECRET,
       httpOnly: true,
